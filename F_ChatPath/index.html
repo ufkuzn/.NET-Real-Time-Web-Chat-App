@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatPath</title>
+    <script src="/node_modules/@microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js"></script>
+</head>
+<body>
+    <div class="header">
+        ChatPath
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-3">
+                    <input class="form-control form-control-lg disabled margin-control arkaplan" type="text" placeholder="Kanal Adı" id="txtKanalAdi">
+                    <button type="button" class="btn btn-info rightButton margin-control" style="margin-bottom: 3px;" id="btnKanalOlustur">Kanal Oluştur</button>
+                    <select size="5" style="width: 100%;" class="form-select disabled rooms arkaplan" multiple>
+                        <option selected value="-1">Kanallar</option>
+                    </select>
+                    <button type="button" class="btn btn-primary rightButton margin-control" id="btnKanallaraGir">
+                        Kanala Gir</button>
+                    <br><br>
+                    <div class="list-group clients">
+                        <a class="list-group-item list-group-item-action users active">Tümü</a>
+                        <div id="_clients"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-success" id="clientDurumMesajlari" style="display: none;">
+                        clientDurumMesajlari denemesi
+                    </div>
+                    <textarea class="form-control margin-control arkaplan" placeholder="İletilecek mesajı buraya giriniz." rows="3" id="txtMesaj"></textarea>
+                    <button type="button" class="btn btn-light rightButton btngg" id="btnGonder">Gönder</button>
+                    <button type="button" class="btn btn-light rightButton btngg" id="btnKanalaGonder">Kanala Gönder</button>
+                    <br><br>
+                    <div class="list-group messages ">
+                        <a class="list-group-item list-group-item-action message" style="background-color: beige;" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"></h5>
+                                <h5 class="mb-2"></h5>
+                            </div>
+                            <p class="mb-1"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input class="form-control form-control-lg margin-control arkaplan" type="text" placeholder="Adınız" id="txtNickName">
+                    <button type="button" class="btn btn-success leftButton margin-control" id="btnGirisYap">Giriş Yap</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <script src="bootstrap.js"></script>
+</body>
+</html>

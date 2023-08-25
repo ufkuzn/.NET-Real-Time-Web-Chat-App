@@ -1,0 +1,32 @@
+/* .row{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: o;
+    padding: 0;
+    background: linear-gradient(4deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+} */
+
+.header{
+    background: orange;
+    font-size: 22px;
+    text-align: center;
+    padding: 1px 0px;
+}
+
+.btngg{
+    font-size: 15px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /*Butonun üzerine gelince fare imleci değişir.*/
+    background: orange;
+    color: brown;
+    margin: 5px 1px;
+}
+
+.margin-control{
+    margin-top: 3px;
+}
+
+/* .arkaplan{
+    background-color: beige;
+} */
